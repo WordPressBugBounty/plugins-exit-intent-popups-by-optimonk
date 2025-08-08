@@ -185,9 +185,30 @@ Once you created a campaign, you can set up the integrations at campaign setting
 
 = Popup builder log =
 
+### 11/12/2024
+
+- OptiMonk popups are officially the #1 in speed
+- New: Announcement popup templates
+- Improvement: Weekly report emails about campaign performance and leads
+
+### 16/10/2024
+
+- New: more Black Friday templates
+- Improvement: Smart Discount Popups into fullscreen popup templates
+- Fix: Extended GA4 tracking with custom-formatted purchase events
+
+### 20/09/2024
+
+- Fix: Enhanced cart rules based on product names
+- Improvement: Email spellchecker
+- Improvement: Alert emails if a campaign stops showing
+- Improvement: Smarter page type targeting (including home page + regular expressions)
+
 ### 22/08/2024
 
-* New: Support new visitor cart rule
+- New: Dynamic Shopify-based product recommendation
+- New: Groundy Template Family
+- New use cases: “Win a gift” and “Exit Reminder”
 
 ### 15/05/2024
 
