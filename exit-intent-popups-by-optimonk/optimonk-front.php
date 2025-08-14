@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__FILE__) . "/optimonk-woo-data-injector.php");
 
 /**
  * @Class OptiMonkFront
@@ -30,11 +31,19 @@ class OptiMonkFront
 
         $insertJavaScript = str_replace('{{siteUrl}}', $url, $insertJavaScript);
 
+
+		$current_url = home_url( add_query_arg( null, null ) );
+        $dataInjector = new OptiMonkWooDataInjector(urldecode($current_url));
+		$dataToInsert = $dataInjector->getData();
+
+        $frontDomain = OPTIMONK_FRONT_DOMAIN;
+
         echo <<<EOD
 <script type="text/javascript">
     $insertJavaScript
+    $dataToInsert
 </script>
-<script type="text/javascript" src="https://onsite.optimonk.com/script.js?account=$accountId" async></script>
+<script type="text/javascript" src="https://$frontDomain/script.js?account=$accountId" async></script>
 EOD;
     }
 
@@ -189,6 +198,14 @@ EOD;
             WcAttributes::getVariables( urldecode($_POST['url']) );
             die();
         }
+
+       if ($pluginVar && $actionVar &&
+         $wp->query_vars['plugin'] == 'optimonk' &&
+         $wp->query_vars['action'] == 'addToCart') {
+
+         WcAttributes::addToCart();
+         die();
+       }
     }
 
     protected static function escapeSlashes($string)

@@ -17,11 +17,6 @@
   }
 
   function setCartData(cartData, adapter) {
-    adapter.Cart.clear();
-
-    cartData.cart.forEach(cartItem => {
-      adapter.Cart.add(cartItem.sku, {quantity: cartItem.quantity, price: cartItem.price, name: cartItem.name});
-    });
     Object.keys(cartData.avs).forEach((key, value) => {
       adapter.attr(`wp_${key}`, cartData.avs[key]);
     })
@@ -82,11 +77,6 @@
     var adapter = window.OptiMonk.Visitor.createAdapter();
 
     setAssocData(pvData, adapter);
-
-    if (OptiMonk.campaigns.filter(campaign => campaign.hasVisitorCartRules()).length) {
-      observeAjaxCartActions(adapter);
-      fetchCart(adapter);
-    }
 
     if (OptiMonk.campaigns.filter(campaign => campaign.hasVisitorAttributeRules()).length) {
       makePostRequest("{{siteUrl}}/index.php?plugin=optimonk&action=productData", { body })

@@ -1,8 +1,45 @@
 <?php
+require_once(dirname(__FILE__) . "/woo-version.php");
+
 class WcAttributes {
     public static function getCartVariables() {
         echo json_encode(self::getWooCommerceCartData());
     }
+
+    public static function addToCart() {
+        if ( ! class_exists( 'WooCommerce' ) ) {
+            wp_send_json_error( array( 'message' => 'WooCommerce is not active' ) );
+            return;
+        }
+
+        $product_id   = isset( $_POST['id'] ) ? absint( $_POST['id'] ) : 0;
+        $quantity     = isset( $_POST['quantity'] ) ? absint( $_POST['quantity'] ) : 1;
+        $variation_id = isset( $_POST['variation_id'] ) ? absint( $_POST['variation_id'] ) : 0;
+        $variation    = isset( $_POST['variation'] ) ? $_POST['variation'] : array();
+
+        if ( ! $product_id ) {
+            wp_send_json_error( array( 'message' => 'Invalid product ID' ) );
+            return;
+        }
+
+        $cart_item_key = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variation );
+
+        if ( $cart_item_key ) {
+            WC()->cart->calculate_totals();
+
+            wp_send_json_success( array(
+                'cart_item_key' => $cart_item_key,
+                'cart_count'    => WC()->cart->get_cart_contents_count(),
+                'cart_total'    => WC()->cart->get_cart_total(),
+                'message'       => sprintf( '%s added to your cart.', get_the_title( $product_id ) )
+            ) );
+        } else {
+            wp_send_json_error( array( 'message' => 'Failed to add product to cart' ) );
+        }
+
+        wp_die();
+    }
+
 
     public static function getVariables( $url ) {
         $postID = url_to_postid($url);
@@ -24,7 +61,7 @@ class WcAttributes {
             )
         );
 
-        if ( self::isWooCommerce() === false ) {
+        if ( WooVersion::isWooCommerce() === false ) {
             return $return;
         }
 
@@ -43,11 +80,12 @@ class WcAttributes {
             $item_price         = $line_subtotal / $quantity;
             $item_tax           = $line_subtotal_tax / $quantity;
             $price              = $item_price + $item_tax;
-
-            $identifier = $product->get_sku() ? $product->get_sku() : $product->get_id();
+            $productId          = $product->get_id();
+            $sku                = $product->get_sku();
 
             $return['cart'][] = array(
-                'sku'      => $identifier,
+                'id'       => $productId,
+                'sku'      => $sku,
                 'name'     => $product_name,
                 'price'    => $price,
                 'quantity' => $quantity,
@@ -111,38 +149,10 @@ class WcAttributes {
     }
 
     protected static function isWooCommerceProductPage($post) {
-        return self::isWooCommerce() && get_post_type($post) === 'product';
-    }
-
-    protected static function isWooCommerce() {
-        global $woocommerce;
-
-        if (
-            isset( $woocommerce ) === false
-            || class_exists( '\WC_Product' ) === false
-        ) {
-            return false;
-        }
-
-        return true;
+        return WooVersion::isWooCommerce() && get_post_type($post) === 'product';
     }
 
     protected static function wpbo_get_woo_version_number() {
-        // If get_plugins() isn't available, require it
-        if ( ! function_exists( 'get_plugins' ) )
-            require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-
-        // Create the plugins folder and file variables
-        $plugin_folder = get_plugins( '/' . 'woocommerce' );
-        $plugin_file = 'woocommerce.php';
-
-        // If the plugin version number is set, return it
-        if ( isset( $plugin_folder[$plugin_file]['Version'] ) ) {
-            return $plugin_folder[$plugin_file]['Version'];
-
-        } else {
-            // Otherwise return null
-            return NULL;
-        }
+        WooVersion::wpbo_get_woo_version_number();
     }
 }

@@ -21,6 +21,8 @@ class OptiMonkAdmin
     {
         self::$basePath = $pluginBasePath;
         add_filter('plugin_action_links_' . plugin_basename(self::$basePath), array($this, 'addSettingsPageLink'));
+        add_filter('woocommerce_get_settings_general', array($this, 'registrateShopId'));
+        add_action('init', array($this, 'generateShopId'));
         add_action('admin_enqueue_scripts', array($this, 'initScripts'));
         add_action('admin_enqueue_scripts', array($this, 'initStyleSheet'));
         add_action('admin_init', array($this, 'initSettings'));
@@ -29,6 +31,35 @@ class OptiMonkAdmin
         add_action('plugins_loaded', array($this, 'loadTextDomain'));
         add_action('admin_footer', array($this, 'settings_javascript'));
         add_action('wp_ajax_setting_form', array($this, 'postHandler'));
+    }
+
+    public function generateShopId() {
+        if (get_option('omplugin_shop_id')) return;
+
+        $siteurl = get_option('siteurl');
+        if (!$siteurl || strlen($siteurl) < 5) return;
+
+        $shopId = preg_replace('/^https?:\/\//', '', $siteurl) . '_' . time();
+
+        update_option('omplugin_shop_id', $shopId);
+    }
+
+    public function registrateShopId($settings) {
+        // [GET] /wp-json/wc/v3/settings/general/omplugin_shop_id
+
+        $shopId = get_option('omplugin_shop_id');
+
+        $settings[] = [
+            'name' => __('UUID', 'OptiMonk'),
+            'id' => 'omplugin_shop_id',
+            'type' => 'text',
+            'default' => $shopId,
+            'desc_tip' => true,
+            'description' => 'Uniquely identify the website for the OptiMonk.',
+            'custom_attributes' => ['readonly' => 'readonly']
+        ];
+    
+        return $settings;
     }
 
     public static function initFeedbackNotification()

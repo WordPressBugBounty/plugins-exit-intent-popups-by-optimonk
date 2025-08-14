@@ -3,7 +3,7 @@ Contributors: OptiMonk
 Tags: popup,popup builder,email popup,optin,conversion
 Requires at least: 2.8.0
 Tested up to: 6.6.1
-Stable tag: 2.0.9
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -184,6 +184,11 @@ Once you created a campaign, you can set up the integrations at campaign setting
 == Changelog ==
 
 = Popup builder log =
+
+### 08/07/2025
+
+- New: Support for Product Recommender algorithms like Most popular, Recently viewed in WooCommerce stores
+- New: Support for Order tracking in WooCommerce stores
 
 ### 11/12/2024
 
