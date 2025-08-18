@@ -14,7 +14,6 @@ class OptiMonkWooDataInjector {
     public function getData() {
         $script = file_get_contents( dirname( __FILE__ ) . '/template/optimonk-woo-data.js' );
 
-        $shopId = get_option('omplugin_shop_id');
 
         $productData = $this->getProductData();
         $orderData = $this->getOrderData();
@@ -24,8 +23,8 @@ class OptiMonkWooDataInjector {
         );
 
         $dataSet = array_merge($dataSet, array('shop' => array(
-            'shopId' => $shopId,
             'pluginVersion' => OM_PLUGIN_VERSION,
+            'platform' => $this->getPlatform(),
         )));
 
         $dataSet = array_merge($dataSet, array('page' => array(
@@ -144,6 +143,10 @@ class OptiMonkWooDataInjector {
 
     protected function getPostType() {
         return get_post_type(get_post($this->postID));
+    }
+
+    protected function getPlatform() {
+        return WooVersion::isWooCommerce() ? 'woocommerce' : 'wordpress';
     }
 
     protected static function getDataSet( array $data ) {
