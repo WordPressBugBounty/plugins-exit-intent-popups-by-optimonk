@@ -42,7 +42,7 @@ class WcAttributes {
 
 
     public static function getVariables( $url ) {
-        $postID = url_to_postid($url);
+        $postID = $url ? url_to_postid($url) : 0;
         $productData    = self::getWooCommerceProductData($postID);
         echo json_encode($productData);
     }

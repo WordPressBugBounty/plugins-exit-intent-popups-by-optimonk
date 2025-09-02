@@ -189,13 +189,14 @@ EOD;
         if ($pluginVar && $actionVar &&
             $wp->query_vars['plugin'] == 'optimonk' &&
             $wp->query_vars['action'] == 'cartData') {
-            WcAttributes::getCartVariables( urldecode($_POST['url']) );
+            WcAttributes::getCartVariables();
             die();
         }
         if ($pluginVar && $actionVar &&
             $wp->query_vars['plugin'] == 'optimonk' &&
             $wp->query_vars['action'] == 'productData') {
-            WcAttributes::getVariables( urldecode($_POST['url']) );
+            $url = isset($_POST['url']) ? urldecode($_POST['url']) : '';
+            WcAttributes::getVariables($url);
             die();
         }
 

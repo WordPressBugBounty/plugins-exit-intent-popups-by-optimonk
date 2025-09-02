@@ -3,7 +3,7 @@ Contributors: OptiMonk
 Tags: popup,popup builder,email popup,optin,conversion
 Requires at least: 2.8.0
 Tested up to: 6.6.1
-Stable tag: 2.1.1
+Stable tag: 2.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -184,6 +184,10 @@ Once you created a campaign, you can set up the integrations at campaign setting
 == Changelog ==
 
 = Popup builder log =
+
+### 02/09/2025
+
+- Improvement: Wider cart integration support
 
 ### 18/08/2025
 

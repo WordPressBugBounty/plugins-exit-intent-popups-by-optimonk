@@ -4,14 +4,14 @@
   Plugin URI: https://www.optimonk.com/
   Description: OptiMonk, the conversion optimization toolset crafted for marketers
   Author: OptiMonk
-  Version: 2.1.1
+  Version: 2.1.2
   Text Domain: optimonk
   Domain Path: /languages
   Author URI: http://www.optimonk.com/
   License: GPLv2
 */
 
-define('OM_PLUGIN_VERSION', '2.1.1');
+define('OM_PLUGIN_VERSION', '2.1.2');
 define('OPTIMONK_FRONT_DOMAIN', 'onsite.optimonk.com');
 
 if (!defined('ABSPATH')) {
