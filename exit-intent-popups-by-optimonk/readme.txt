@@ -1,9 +1,9 @@
-=== Popups supercharged: Stunning templates for email, SMS, discount popups, product recommendation etc. ===
+=== AI Popup Builder & Popup Maker by OptiMonk ===
 Contributors: OptiMonk
 Tags: popup,popup builder,email popup,optin,conversion
 Requires at least: 2.8.0
-Tested up to: 6.6.1
-Stable tag: 2.1.2
+Tested up to: 6.9
+Stable tag: 2.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,18 +11,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-= ✨POWERFUL EMAIL, SMS & SALES POPUPS TO MAXIMIZE OPT-IN RATES | 🚀NO-CODE VISUAL EDITOR | 🔥 ADVANCED A/B TESTS & PERSONALIZATION =
+= 🚀 Popups that perfectly match your brand. Built in minutes. Designed to convert. =
 
-<a href="https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Start creating popups for free">Start creating popups for free</a> | <a href="https://www.optimonk.com/templates/" target="_blank" title="Popup Templates">Popup Templates</a> | <a href="https://www.optimonk.com/templates/use-cases" target="_blank" title="Use Case Library">Use Case Library</a> | <a href="https://support.optimonk.com/hc/en-us"  target="_blank" title="Support">Support</a>
+[Start creating popups for free](https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress) | [AI popup wizard](https://wizard.optimonk.com/) | [Popup templates](https://library.optimonk.com/templates/themes) | [Use Case Library](https://library.optimonk.com/templates/use-cases) | [Support](https://support.optimonk.com/hc/en-us)
 
-Turn popups into sales. Use killer, personalized popups that grab attention and boost your $$$. OptiMonk offers an easy drag-and-drop editor, personalization, and A/B testing. Unlock 20+ template families for email + SMS list building, cart recovery, free shipping bars, product recommendations, and 30+ use cases. No designer needed. Proven results or your money back. Don't settle for less. Try OptiMonk and see the difference for yourself!
+OptiMonk is the AI-driven popup builder designed for ecommerce businesses. It enables digital marketers to create high-converting popups in minutes, without any technical knowledge or complex editing tools. With just a few clicks, our AI creates popups that match your brand and are optimized for maximum conversion. And when you want full control, you can easily fine-tune everything using our drag-and-drop editor. Try OptiMonk and see the difference for yourself!
 
-= EVERYTHING YOU NEED TO INCREASE CONVERSIONS: =
-- **Ready-made popups** designed to convert more Email + SMS Subscribers
-- **Popups for every goal:** Free shipping, recommendation, gamification, countdown
-- **Simple Visual Editor:** Make popups your own in seconds
-- **Forget vanity metrics:** True revenue analytics shows what drives sales
-- **Unique discount codes:** Auto-redemption & reminders for more sales
+**EVERYTHING YOU NEED TO INCREASE CONVERSIONS:**
+
+- AI wizard: Create stunning, on-brand popups instantly with AI.
+- Drag & drop editor: Fine-tune your popups anytime with our easy visual editor.
+- A/B testing: Launch quick tests to find the best headlines, offers, or messages.
+- Analytics: Optimize for real revenue, not just clicks or signups.
+- Personalization: Show the right message to the right customer, every time.
 
 <a href="https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Start turning traffic into sales NOW">Start turning traffic into sales NOW —></a>
 
@@ -35,7 +36,7 @@ Turn popups into sales. Use killer, personalized popups that grab attention and 
 - **No-code Landing Page Personalization**: Auto-adapt text to your visitors.
 
 > <strong>Use OptiMonk for FREE</strong>
-> Running a small business? Use OptiMonk for free up to 15,000 pageviews on your website and start growing with confidence!
+> Running a small business? Use OptiMonk for free up to 10,000 pageviews on your website and start growing with confidence!
 
 = SUPERCHARGE AVERAGE POPUP CONVERSION RATES WITH ADVANCED FEATURES & TEMPLATES =
 🔥 Discount Code Reminders to boost redemption
@@ -174,12 +175,11 @@ Once you created a campaign, you can set up the integrations at campaign setting
 
 == Screenshots ==
 
-1. Email & SMS popups designed to boost sales & conversions
-2. Enhance your list-building efforts with popups crafted for maximum conversions
-3. Love a design? Use it across multiple use cases!
-4. Simply drag & drop to create amazing designs – no tech skills needed. Design elements once and reuse them endlessly.
+1. Build high-converting popups without the busywork with an AI-native popup builder.
+2. Use the AI wizard to build on-brand popups instantly.
+3. Fine-tune your popups with our drag & drop editor or AI editor. You decide which editor to use.
+4. Email & SMS popups designed to boost sales & conversions.
 5. A/B test more than just copy or image changes by comparing various offers and campaigns. True revenue analytics reveal what truly drives sales.
-6. Make every visit unique with no-code personalization
 
 == Changelog ==
 
@@ -235,6 +235,13 @@ Once you created a campaign, you can set up the integrations at campaign setting
 * New: Campaign performance tracking based on Custom Conversion Event
 * New: Mobile preview for different devices
 * New: 4 new template designs
+
+= 2.1.4 =
+* Test up to 6.9
+
+= 2.1.3 =
+* Feature: Add WooCommerce category data (name, slug, ID) to WooDataForOM for better campaign targeting
+* Feature: Add WooCommerce cart URL to shop data for easier cart navigation in campaigns
 
 = 2.0.8 =
 * Test up to 6.6.1

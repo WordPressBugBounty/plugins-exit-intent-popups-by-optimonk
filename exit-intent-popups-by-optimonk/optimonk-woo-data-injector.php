@@ -17,15 +17,23 @@ class OptiMonkWooDataInjector {
 
         $productData = $this->getProductData();
         $orderData = $this->getOrderData();
+        $categoryData = $this->getCategoryData();
 
         $dataSet = array(
-            'shop' => null, 'page' => null,'product' => null, 'order' => null
+            'shop' => null, 'page' => null,'product' => null, 'order' => null, 'category' => null
         );
 
-        $dataSet = array_merge($dataSet, array('shop' => array(
+        $shopData = array(
             'pluginVersion' => OM_PLUGIN_VERSION,
             'platform' => $this->getPlatform(),
-        )));
+        );
+
+        // Add cart URL if WooCommerce is active
+        if (WooVersion::isWooCommerce() && function_exists('wc_get_cart_url')) {
+            $shopData['cartUrl'] = wc_get_cart_url();
+        }
+
+        $dataSet = array_merge($dataSet, array('shop' => $shopData));
 
         $dataSet = array_merge($dataSet, array('page' => array(
             'postId' => $this->postID,
@@ -37,6 +45,9 @@ class OptiMonkWooDataInjector {
         }
         if (!empty($orderData) && $orderData['order.order_id']) {
             $dataSet = array_merge($dataSet, array('order' => self::removePrefixes($orderData)));
+        }
+        if (!empty($categoryData) && $categoryData['category.id']) {
+            $dataSet = array_merge($dataSet, array('category' => self::removePrefixes($categoryData)));
         }
 
         $script = str_replace(
@@ -137,6 +148,26 @@ class OptiMonkWooDataInjector {
         return $return;
     }
 
+    protected function getCategoryData() {
+        $return = array();
+
+        if (!WooVersion::isWooCommerce() || !function_exists('is_product_category') || !is_product_category()) {
+            return $return;
+        }
+
+        $queried_object = get_queried_object();
+
+        if (!$queried_object || !isset($queried_object->term_id)) {
+            return $return;
+        }
+
+        $return['category.id'] = $queried_object->term_id;
+        $return['category.name'] = $queried_object->name;
+        $return['category.slug'] = $queried_object->slug;
+
+        return $return;
+    }
+
     protected function isWooCommerceProductPage() {
         return WooVersion::isWooCommerce() && $this->postID !== 0 && $this->getPostType() === 'product';
     }
@@ -156,7 +187,7 @@ class OptiMonkWooDataInjector {
 	}
 
     protected static function removePrefixes(array $data): array {
-        $prefixes = ['order.', 'current_product.'];
+        $prefixes = ['order.', 'current_product.', 'category.'];
         $result = [];
         foreach ($data as $key => $value) {
             $newKey = $key;
