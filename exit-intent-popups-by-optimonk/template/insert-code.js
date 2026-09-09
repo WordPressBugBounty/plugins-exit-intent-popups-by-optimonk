@@ -28,12 +28,11 @@
     })
   }
 
+  // The wp_current_product.* fields are set from optimonk-woo-data.js on every page load,
+  // independently of which campaigns reach the page.
   var RuleHandler = {
     hasVisitorCartRules: (campaignMeta) => {
       return !!(campaignMeta.rules.visitorCart || campaignMeta.rules.visitorCartRevamp || campaignMeta.rules.visitorCartV3);
-    },
-    hasVisitorAttributeRule: (campaignMeta) => {
-      return !!campaignMeta.rules.visitorAttribute;
     }
   }
 
@@ -46,11 +45,9 @@
 
     var adapter = window.OptiMonkEmbedded.Visitor.createAdapter();
     var hasCartRule = false;
-    var hasAttributeRule = false;
 
     campaignsData.forEach((campaignMetaData) => {
       hasCartRule = hasCartRule || RuleHandler.hasVisitorCartRules(campaignMetaData);
-      hasAttributeRule = hasAttributeRule || RuleHandler.hasVisitorAttributeRule(campaignMetaData);
     });
 
     setAssocData(pvData, adapter);
@@ -58,14 +55,6 @@
     if (hasCartRule) {
       observeAjaxCartActions(adapter);
       fetchCart(adapter);
-    }
-
-    if (hasAttributeRule) {
-      makePostRequest("{{siteUrl}}/index.php?plugin=optimonk&action=productData", { body })
-        .then((response) => {
-          var data = JSON.parse(response);
-          setAssocData(data, adapter);
-        })
     }
   });
 
@@ -77,13 +66,5 @@
     var adapter = window.OptiMonk.Visitor.createAdapter();
 
     setAssocData(pvData, adapter);
-
-    if (OptiMonk.campaigns.filter(campaign => campaign.hasVisitorAttributeRules()).length) {
-      makePostRequest("{{siteUrl}}/index.php?plugin=optimonk&action=productData", { body })
-        .then((response) => {
-          var data = JSON.parse(response);
-          setAssocData(data, adapter);
-        });
-    }
   });
 }());

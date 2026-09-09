@@ -22,9 +22,9 @@ class OptiMonkFront
             return;
         }
 
-        $data = OptiMonkFront::getWordpressData();
+        list($pageData, $basicData) = self::splitPageAttributes(OptiMonkFront::getWordpressData());
         $insertJavaScript = file_get_contents($templateBasePath . '/insert-code.js');
-        $insertJavaScript = str_replace('{{basic_data}}', json_encode($data), $insertJavaScript);
+        $insertJavaScript = str_replace('{{basic_data}}', json_encode($basicData), $insertJavaScript);
 
         $url = get_site_url();
         $url = preg_replace('(^http:|^https:)', '', $url);
@@ -32,9 +32,10 @@ class OptiMonkFront
         $insertJavaScript = str_replace('{{siteUrl}}', $url, $insertJavaScript);
 
 
-		$current_url = home_url( add_query_arg( null, null ) );
+		$current_url = self::getCurrentUrl();
         $dataInjector = new OptiMonkWooDataInjector(urldecode($current_url));
 		$dataToInsert = $dataInjector->getData();
+        $dataToInsert = str_replace('{{page_data}}', json_encode($pageData), $dataToInsert);
 
         $frontDomain = OPTIMONK_FRONT_DOMAIN;
 
@@ -45,6 +46,48 @@ class OptiMonkFront
 </script>
 <script type="text/javascript" src="https://$frontDomain/script.js?account=$accountId" async></script>
 EOD;
+    }
+
+    /**
+     * The attributes that describe the page being viewed. These go to the
+     * optimonk-woo-data.js template, which writes them on every page load: the campaign
+     * init listeners in insert-code.js do not fire on a page no campaign is sent to, so
+     * these used to keep describing the previously viewed page.
+     *
+     * Everything else stays with insert-code.js on purpose. The utm_* keys are only
+     * present when they are in the query string, which is what keeps the attribution
+     * alive across page loads, and rewriting the visitor and source attributes on every
+     * page load would be a behaviour change of its own.
+     */
+    protected static $pageAttributes = array(
+        'page_title',
+        'post_type',
+        'post_type_with_prefix',
+        'post_categories',
+        'post_tags',
+        'post_author',
+        'post_full_date',
+        'post_year',
+        'post_month',
+        'post_day',
+        'is_front_page',
+        'is_home',
+        'search_query',
+        'search_results_count',
+    );
+
+    protected static function splitPageAttributes(array $data)
+    {
+        $pageData = array();
+
+        foreach (self::$pageAttributes as $key) {
+            if (array_key_exists($key, $data)) {
+                $pageData[$key] = $data[$key];
+                unset($data[$key]);
+            }
+        }
+
+        return array($pageData, $data);
     }
 
     protected static function getWordpressData()
@@ -207,6 +250,36 @@ EOD;
          WcAttributes::addToCart();
          die();
        }
+    }
+
+    /**
+     * The URL of the page being rendered.
+     *
+     * REQUEST_URI already contains the install subdirectory (and any directory-based
+     * language segment), so it must not be passed through home_url() -- that prefixes
+     * the same path a second time and breaks every URL-based lookup, url_to_postid()
+     * included. Scheme and host still come from home_url() so the URL stays canonical.
+     */
+    protected static function getCurrentUrl()
+    {
+        $requestUri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+
+        if (!$requestUri) {
+            return home_url();
+        }
+
+        $home = parse_url(home_url());
+
+        if (empty($home['scheme']) || empty($home['host'])) {
+            return home_url($requestUri);
+        }
+
+        $origin = $home['scheme'] . '://' . $home['host'];
+        if (!empty($home['port'])) {
+            $origin .= ':' . $home['port'];
+        }
+
+        return $origin . $requestUri;
     }
 
     protected static function escapeSlashes($string)

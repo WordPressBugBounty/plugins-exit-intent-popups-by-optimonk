@@ -6,9 +6,69 @@ class OptiMonkWooDataInjector {
     
     protected $postID = '';
 
+    protected $urlPostID = 0;
+
+    protected $product = null;
+
     public function __construct($url) {
         $this->url = $url;
-        $this->postID = url_to_postid($url);
+        $this->urlPostID = (int) url_to_postid($url);
+        $this->product = $this->resolveCurrentProduct();
+        $this->postID = $this->resolvePostID();
+    }
+
+    /**
+     * The product being viewed, or null off a product page.
+     *
+     * Asks WooCommerce first instead of deriving the ID from the URL: url_to_postid()
+     * is a reverse lookup against the rewrite rules and returns 0 whenever the URL it
+     * gets is not the canonical permalink -- a subdirectory or directory-based
+     * multilingual install, plain permalinks, or a page builder rendering the product
+     * through its own template. That returned 0 used to drop the product block while
+     * page.postType still said "product".
+     */
+    protected function resolveCurrentProduct() {
+        if (!WooVersion::isWooCommerce() || !function_exists('wc_get_product')) {
+            return null;
+        }
+
+        if (function_exists('is_product') && is_product()) {
+            $product = wc_get_product(get_queried_object_id());
+            if (!$product) {
+                // Page builder templates: the queried object is the template, only the
+                // global product carries the real ID.
+                $product = wc_get_product();
+            }
+            if ($product) {
+                return $product;
+            }
+        }
+
+        // Kept as a fallback for setups where the conditional tags do not recognise the
+        // page -- this is what the plugin relied on before.
+        if ($this->urlPostID && get_post_type($this->urlPostID) === 'product') {
+            $product = wc_get_product($this->urlPostID);
+            if ($product) {
+                return $product;
+            }
+        }
+
+        return null;
+    }
+
+    protected function resolvePostID() {
+        if ($this->product) {
+            return (int) $this->product->get_id();
+        }
+
+        if (function_exists('is_singular') && is_singular()) {
+            $queriedID = (int) get_queried_object_id();
+            if ($queriedID) {
+                return $queriedID;
+            }
+        }
+
+        return $this->urlPostID;
     }
 
     public function getData() {
@@ -68,9 +128,9 @@ class OptiMonkWooDataInjector {
     }
 
     protected function getProductData() {
-        $postID = $this->postID;
+        $product = $this->product;
 
-        if ($this->isWooCommerceProductPage() === false) {
+        if (!$product) {
             return array();
         }
 
@@ -86,7 +146,6 @@ class OptiMonkWooDataInjector {
             'current_product.is_in_stock'  => false,
         );
 
-        $product = wc_get_product($postID);
         $productId = $product->get_id();
 
         $return['current_product.id']           = $productId;
@@ -166,10 +225,6 @@ class OptiMonkWooDataInjector {
         $return['category.slug'] = $queried_object->slug;
 
         return $return;
-    }
-
-    protected function isWooCommerceProductPage() {
-        return WooVersion::isWooCommerce() && $this->postID !== 0 && $this->getPostType() === 'product';
     }
 
     protected function getPostType() {

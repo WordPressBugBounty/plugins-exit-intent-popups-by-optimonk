@@ -3,7 +3,7 @@ Contributors: OptiMonk
 Tags: popup,popup builder,email popup,optin,conversion
 Requires at least: 2.8.0
 Tested up to: 6.9
-Stable tag: 2.1.6
+Stable tag: 2.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -236,12 +236,38 @@ Once you created a campaign, you can set up the integrations at campaign setting
 * New: Mobile preview for different devices
 * New: 4 new template designs
 
+= 2.1.7 =
+* Improvement: Product data for campaign targeting is read from the inline shop data instead of extra server requests on every page load
+* Fix: Product data is filled in reliably on product pages where the product could not be resolved from the URL (subdirectory, multilingual or page builder setups)
+
+= 2.1.6 =
+* Plugin renamed to "AI Popup Builder & Popup Maker by OptiMonk", new banner
+
+= 2.1.5 =
+* Updated plugin description and screenshots
+
 = 2.1.4 =
 * Test up to 6.9
 
 = 2.1.3 =
 * Feature: Add WooCommerce category data (name, slug, ID) to WooDataForOM for better campaign targeting
 * Feature: Add WooCommerce cart URL to shop data for easier cart navigation in campaigns
+
+= 2.1.2 =
+* Improvement: Wider cart integration support
+
+= 2.1.1 =
+* New: Platform detection in WooDataForOM.shop.platform (wordpress/woocommerce)
+* Fix: Cart integration when the WooCommerce plugin responds slowly
+
+= 2.1.0 =
+* New: WooDataForOM shop data (shop ID, product, order) for Product Recommender and order tracking in WooCommerce stores
+* New: AJAX add-to-cart hooks for product cards
+* Improvement: Cart update logic removed from the plugin
+
+= 2.0.9 =
+* New: Support for the visitorCartV3 cart rule
+* New: Plugin activation and uninstall tracking
 
 = 2.0.8 =
 * Test up to 6.6.1
@@ -264,6 +290,9 @@ Once you created a campaign, you can set up the integrations at campaign setting
 
 = 2.0.2 =
 * Add async load to the insert code
+
+= 2.0.1 =
+* Add product name to cart attributes
 
 = 2.0.0 =
 * Insert new code to the head section
