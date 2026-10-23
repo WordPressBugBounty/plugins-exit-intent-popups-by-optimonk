@@ -7,179 +7,176 @@ Stable tag: 2.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-💥 Popups, supercharged: One platform. Hundreds of use cases. Increase sales & subscribers with popups visitors actually 🧡 love.
+Chat with an AI agent to build fully custom, on-brand popups. No templates. No designers.
 
 == Description ==
 
-= 🚀 Popups that perfectly match your brand. Built in minutes. Designed to convert. =
+= Chat with an AI agent to build fully custom,<br>on-brand popups. No templates. No designers. =
 
-[Start creating popups for free](https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress) | [AI popup wizard](https://wizard.optimonk.com/) | [Popup templates](https://library.optimonk.com/templates/themes) | [Use Case Library](https://library.optimonk.com/templates/use-cases) | [Support](https://support.optimonk.com/hc/en-us)
+[Start for free](https://agentic.optimonk.com/register?utm_campaign=wordpress&utm_medium=applisting&utm_source=referral) | [Try the AI agent](https://www.optimonk.com/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress) | [Popup library](https://www.optimonk.com/popup-library) | [Connect your AI assistant (MCP)](https://www.optimonk.com/ai-assistants) | [Support](https://support.optimonk.com/en/)
 
-OptiMonk is the AI-driven popup builder designed for ecommerce businesses. It enables digital marketers to create high-converting popups in minutes, without any technical knowledge or complex editing tools. With just a few clicks, our AI creates popups that match your brand and are optimized for maximum conversion. And when you want full control, you can easily fine-tune everything using our drag-and-drop editor. Try OptiMonk and see the difference for yourself!
+Most popup tools hand you a template and let you change the colors and the headline. OptiMonk gives you an AI agent instead. Enter your domain, describe the popup you want in plain words, and the agent builds it from scratch, using your brand's colors, fonts, style and products.
 
-**EVERYTHING YOU NEED TO INCREASE CONVERSIONS:**
+It asks follow-up questions when something is unclear, writes in any language you need, and helps you set who should see the popup and when in a few clicks. After launch, it keeps an eye on your results, suggests A/B tests and new campaigns, and builds them when you say yes.
 
-- AI wizard: Create stunning, on-brand popups instantly with AI.
-- Drag & drop editor: Fine-tune your popups anytime with our easy visual editor.
-- A/B testing: Launch quick tests to find the best headlines, offers, or messages.
-- Analytics: Optimize for real revenue, not just clicks or signups.
-- Personalization: Show the right message to the right customer, every time.
+No templates, no designers, no developers, built on the platform more than 30,000 brands already trust to grow their sales and subscribers.
 
-<a href="https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Start turning traffic into sales NOW">Start turning traffic into sales NOW —></a>
+= WHAT YOUR AI POPUP AGENT DOES FOR YOU =
 
-[youtube  https://www.youtube.com/watch?v=z0cwesqBq5I]
+- **Builds popups via chat:** describe your goal, and the AI agent designs, writes and targets the popup for you.
+- **Adds motion:** animated backgrounds that make visitors stop scrolling.
+- **Works inside Claude and ChatGPT:** build and edit popups from your AI assistant through MCP integration.
+- **Finds your next win:** it reads your store data, spots what to improve, and suggests ready-made campaigns.
+- **Runs A/B tests on request:** ask for headline, design or offer variants, and it sets them up.
 
-= HOW OPTIMONK GROWS SALES WITH POPUPS, WEBSITE PERSONALIZATION & A/B TESTING =
-- **Email and SMS Popups:** Save abandoned carts, capture emails, introduce gamification, and serve discount reminders.
-- **AI-powered Popups:** Automatically tailor content based on user behavior or traffic sources.
-- **A/B Testing**: Fully automated, AI-assisted A/B testing with full user control.
-- **No-code Landing Page Personalization**: Auto-adapt text to your visitors.
+[Start chatting with your popup agent →](https://agentic.optimonk.com/register?utm_campaign=wordpress&utm_medium=applisting&utm_source=referral)
 
-> <strong>Use OptiMonk for FREE</strong>
-> Running a small business? Use OptiMonk for free up to 10,000 pageviews on your website and start growing with confidence!
+= BUILD, TEST, LEARN, REPEAT: HOW THE AGENT GROWS YOUR SALES =
 
-= SUPERCHARGE AVERAGE POPUP CONVERSION RATES WITH ADVANCED FEATURES & TEMPLATES =
-🔥 Discount Code Reminders to boost redemption
-🔥 Collect First-Party Data with survey popups
-🔥 Gamification & Lucky Wheel Templates to boost engagement
-🔥 Smart Teasers that follow the user around
-🔥 AI-generated personalized popup copy
+- **Build:** email and SMS popups, cart abandonment offers, lucky wheels, and scratch cards, each one made for your store in minutes.
+- **Test:** create as many variants as you like. Test headlines, designs and CTAs, or pit whole campaign types against each other, like a lucky wheel against an email signup popup.
+- **Learn:** analytics shows the revenue each campaign brings in, not just clicks and signups, and points out where you are losing sales.
+- **Repeat:** the agent turns what it learns into new campaign ideas, each with a ready-made design. Launch the ones you like in one click.
 
-= MULTIPLY YOUR MARKETING EFFORTS BY INTEGRATING OPTIMONK WITH YOUR TECH STACK =
-Unlock the full potential of your marketing strategy by seamlessly integrating OptiMonk with popular marketing automation tools such as:
-- <a href="https://support.optimonk.com/hc/en-us/articles/202899642-Integrating-OptiMonk-campaigns-with-MailChimp" target="_blank" title="Mailchimp popup">Mailchimp popup —></a>
-- <a href="https://support.optimonk.com/hc/en-us/articles/207320085-Integrating-OptiMonk-with-ActiveCampaign-" target="_blank" title="ActiveCampaign popup">ActiveCampaign popup —></a>
-- <a href="https://support.optimonk.com/hc/en-us/articles/4414919489170-Attentive-Integration" target="_blank" title="Attentive popup">Attentive popup —></a>
-- <a href="https://www.optimonk.com/klaviyo/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Klaviyo popup">Klaviyo popup —></a>
-- <a href="https://support.optimonk.com/hc/en-us/articles/360000255740-Integrating-OptiMonk-Campaigns-with-Hubspot" target="_blank" title="Hubspot popup">Hubspot popup —></a>
+> <strong>Start for free, with every feature</strong>
+> The free plan includes 10,000 pageviews per month, all features, and unlimited users.
 
-And create beautiful, mobile-optimized high-converting WooCommerce campaigns:
-- WooCommerce discounts
+= CONVERSION BOOSTERS YOUR AGENT CAN ADD TO ANY CAMPAIGN =
+
+- Animated popups that catch the eye with one click
+- Survey popups that collect first-party data
+- Lucky wheels and scratch cards that make signing up fun
+- Countdown timers that add urgency to limited-time offers
+- Multi-step campaigns that guide shoppers from first visit to checkout
+
+= CONNECTED TO YOUR MARKETING STACK AND YOUR WOOCOMMERCE STORE =
+
+New subscribers flow straight into the tools you already use:
+
+- [Mailchimp popup](https://support.optimonk.com/en/articles/integrating-optimonk-campaigns-with-mailchimp)
+- [ActiveCampaign popup](https://support.optimonk.com/en/collections/integrations-email-sms-and-crm-41604332)
+- [Attentive popup](https://support.optimonk.com/en/articles/attentive-integration)
+- [Klaviyo popup](https://support.optimonk.com/en/articles/integrating-optimonk-campaigns-with-klaviyo)
+- [Hubspot popup](https://support.optimonk.com/en/articles/integrating-optimonk-campaigns-with-hubspot)
+
+The plugin also shares your WooCommerce data with OptiMonk: cart value and content, products, categories and orders. That lets the agent build campaigns that react to what each shopper does. Just ask for:
+
+- WooCommerce discount popups
 - WooCommerce lucky wheel popups
 - WooCommerce exit popups
 - WooCommerce upsells
-- WooCommerce free shipping bars
 - WooCommerce countdown timers
 - WooCommerce cart abandonment popups
+- WooCommerce product recommendations (Most popular, Recently viewed)
 
-<a href="https://www.optimonk.com/integrations/" target="_blank" title="Browse all integrations">Browse all integrations →</a>
+[Browse all integrations →](https://www.optimonk.com/integrations/)
 
-= TRUSTED BY MANY PEOPLE JUST LIKE YOU =
+= TRUSTED BY MORE THAN 30,000 BRANDS =
 
-> <strong>Ryan Pamplin | CEO, Bendjet | +39.2% extra revenue</strong><br>
-> “When comparing OptiMonk vs other leading popup solutions, no one else has the valuable integrations we need, robust testing capabilities, and amazing team to support our ever-evolving needs.”
-> <a href="https://www.optimonk.com/how-blendjet-one-of-the-fastest-growing-shopify-stores-generated-392-extra-revenue-with-optimonk/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="See case study">See case study —></a>
+> <strong>Ryan Pamplin | CEO, BlendJet | +39.2% extra revenue</strong><br>
+> "When comparing OptiMonk vs other leading popup solutions, no one else has the valuable integrations we need, robust testing capabilities, and amazing team to support our ever-evolving needs."
+> [See case study →](https://www.optimonk.com/how-blendjet-one-of-the-fastest-growing-shopify-stores-generated-392-extra-revenue-with-optimonk/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)
 
 > <strong>Eric Nguyen | CEO, Indestructible Shoes | +13.2% e-commerce conversion rate</strong><br>
-> “I had high expectations when I started using OptiMonk, but still I was surprised by the results. In just a short period of time, we could reach higher conversion rates than with any other tools. Highly recommended!”
-> <a href="https://www.optimonk.com/indestructible-shoes-improved-ecommerce-conversion-rates/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="See case study">See case study —></a>
+> "I had high expectations when I started using OptiMonk, but still I was surprised by the results. In just a short period of time, we could reach higher conversion rates than with any other tools. Highly recommended!"
+> [See case study →](https://www.optimonk.com/indestructible-shoes-improved-ecommerce-conversion-rates/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)
 
-= CREATE BEAUTIFUL POPUPS WITHOUT TOUCHING CODE WITH OUR DRAG & DROP POPUP BUILDER =
-You don’t need to be an IT expert or web guru to take advantage of the powerful popup builder, A&B testing, and personalization features built-in to OptiMonk. Design branded messages and set up advanced targeting options—without a designer or developer.
+= BUILD POPUPS BY CHATTING, NOT DRAGGING =
 
-***Start from 300+ prebuilt popup templates or start from scratch***
-Start from any of our 300+ prebuilt professionally designed templates or create your own popup that fits your brand easily in a drag-and-drop editor. Re-use your style settings for new campaigns to save time.
+You don't need a designer, a copywriter or a developer. Tell the agent what you want, and it handles the design, the copy and the setup.
 
-Pick any popup type that is right for your goal from standard popups, through fullscreens, sidemessages, sticky bars, gamification popups, surveys to embedded campaigns.
-<a href="https://www.optimonk.com/templates/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Explore 300+ prebuilt mobile-friendly templates">Explore 300+ prebuilt mobile-friendly templates —></a>
+#### From one sentence to a finished popup
 
-***Add any popup element you can think of***
-Our Drag & Drop Editor allows you to add any basic, form, or structural elements to your popups and customize them to your liking. Choose from different input fields such as email, phone number, and text field, as well as various survey elements.
+Enter your domain and type what you need, for example: "10% discount for email signup, on exit intent". The agent scans your site in seconds, picks up your colors, fonts, style and products, and builds a popup that looks like it was made by your own team. Classic popups, fullscreens, gamified popups, surveys or multi-step flows: just say which.
 
-Add or remove images, backgrounds, and other visual elements with just a few clicks. Ready to see your creation in action? Then check out the Live Preview to see how your popup looks on your site.
-<a href="https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Start creating your free popup NOW">Start creating your free popup NOW —></a>
+#### Give it a starting point
 
-***Advanced features for maximum conversions***
-- **Delay Closing X:** Delay the appearance of the closing (X) button for a couple of seconds to make visitors read your message first.
-- **Countdown Timer:** Capitalize on the FOMO effect of limited-time offers by including a countdown timer in your campaigns.
-- **Sticky Teaser:** Sticky teasers follow your visitors throughout your website, and subtly remind them of your message.
+Have an idea of the look you want? Share one of your earlier popups, an example from the popup library, or any image you upload. The agent turns it into a campaign that fits your site.
 
-***Targeting & Triggering***
+[Create your first popup for free →](https://agentic.optimonk.com/register?utm_campaign=wordpress&utm_medium=applisting&utm_source=referral)
 
-Use any of our built-in segments or set up your own targeting rules using our extensive array of targeting options. Target your popup campaigns based on various criteria: the pages your visitors have or have not visited, the page they’re currently on, the amount of time they've spent on your site, the products in their carts, their country of origin, or whether they are already subscribers.
+#### Change anything by asking
 
-Monitor the behavior of every single visitor and trigger your message at the exact moment they take a specific action. Capture the attention of visitors about to leave your site with exit-intent technology. Additionally, trigger your popups based on time spent on a page, scrolling, clicking, or after a custom JavaScript event.
+Want different copy, a new color or a bigger button? Ask in the chat. Need a variant for an A/B test? Ask for that too.
 
-***Analytics tailored to your key goals***
+#### Build from Claude, ChatGPT or any AI assistant
 
-Effortlessly track your campaign's impact with our intuitive Campaign Analytics reports. These provide comprehensive insights at the campaign level, empowering you to continually refine and enhance your strategies.
+Connect OptiMonk to your AI assistant through MCP, then create campaigns and check your results without opening the OptiMonk dashboard. [See how to connect your AI assistant](https://support.optimonk.com/en/articles/connect-your-ai-agent)
 
-Our advanced analytics system offers a detailed view of your campaigns' revenue contributions. With OptiMonk’s Conversion Goals, extend your tracking capabilities beyond mere sign-ups and button clicks. Choose the right conversion goals that resonate with your specific business objectives and measure performance using precise metrics tailored to your needs.
+#### Details that lift conversions
 
-🚀 Utilize **Conversion Goals** to:
+- **Animated popups:** subtle background motion, added with one click, draws attention to your message.
+- **Delay Closing X:** show the close button a few seconds later, so visitors read your offer first.
+- **Countdown timer:** use the urgency of limited-time offers.
+- **Any language:** the agent writes your popup in the language your visitors speak.
+- **Dynamic product recommendations:** show each visitor the products they are most likely to buy, such as best sellers or items they viewed recently.
 
-- Monitor product sales
-- Set goals for sales exceeding specific cart values
-- Track the volume of products added to carts
+#### Targeting and triggers in a few clicks
 
-[Start creating your free popup NOW —>](https://app.optimonk.com/register/en?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)
+Deciding who sees your popup, when and how often is part of the same simple flow. The agent helps you set it all up at once, so you only need to pick the options you want with a few clicks. Target visitors by pages visited, the current page, time on site, cart content, country, or whether they are already subscribers.
 
-**USE OUR USER EXPERIENCE PROTECTOR FOR THE BEST VISITOR EXPERIENCE**
+Choosing the right moment is just as quick: show the popup on exit intent, after a set time, on scroll, on click, or after a custom JavaScript event.
 
-Concerned about bombarding your visitors with excessive popups? Put those worries to rest!
+#### Analytics that tell you what to do next
 
-User Experience Protector serves as a guardian angel of user experience, assuring that your visitors never get overwhelmed with popups. Working like a shield, it allows only a given number of campaigns to be displayed for visitors within a selected timeframe. Further campaigns will be shown when the time frame is over. Use this smart cap on how many campaigns your visitors see without compromising on conversions.
+The analytics tracks the revenue each campaign brings in, not only signups and clicks. The agent reads these results, shows you where your store is losing sales, and collects its suggestions under Ideas to try. You'll find new campaign ideas there, each with a ready-made design. Launch any of them in one click.
 
-**MOBILE-OPTIMIZED POPUPS**
+Set Conversion Goals that match your business:
 
-All our popup templates are automatically optimized for mobile, ensuring 100% responsiveness and a visually appealing display on all devices. What’s more, OptiMonk allows you to adjust the look of your campaigns by device type and hide elements such as images on mobile that would take up too much space.
+- Product sales
+- Orders above a set cart value
+- Products added to cart
 
-[Browse mobile-friendly popup templates —>](https://www.optimonk.com/templates/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)
+[Start creating your free popup now →](https://agentic.optimonk.com/register?utm_campaign=wordpress&utm_medium=applisting&utm_source=referral)
 
-**300+ TEMPLATES BUILT AROUND TESTED & PROVEN CRO TACTICS**
+= MORE POPUPS, NEVER TOO MANY: USER EXPERIENCE PROTECTOR =
 
-Not sure which use cases are the right for your brand? Get inspired by browsing our list of professional, responsive templates and our Tactic Library of 50+ CRO tactics with step-by-step guides.
+Worried about showing visitors too many popups? User Experience Protector caps how many campaigns a visitor can see within a set timeframe. Further campaigns wait until the timeframe is over, so you get the conversions without annoying anyone.
 
-**⭐ [Welcome Discounts:](https://www.optimonk.com/templates/all?goals=capture_email&industries=ecommerce&utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Collect email addresses of first-time visitors. Add a discount to make it more effective.
+= BUILT FOR MOBILE FROM THE START =
 
-**⭐ [Gamification Popups:](https://www.optimonk.com/templates/all?gamification=true&utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Boost engagement with fun-filled gamified popups such as lucky wheels or pick a present popups. Achieve a +15% boost in conversion rate.
-
-**⭐ [Seasonal Popups:](https://www.optimonk.com/templates/use-cases/seasonal-offers-5fb7d3eee6535c0012b74d25?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Whether you’re running a Christmas sale or offering Black Friday deals, use eye-catching popups to promote your sale campaigns around your store.
-
-**⭐ [Cart Abandonment Popups:](https://www.optimonk.com/templates/all?goals=reduce_cart_abandonment&utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Close more deals with or without discounting. Leverage product recommendations and countdown timers. Target messages based on cart content.
-
-**⭐ [Free Shipping Bars:](https://www.optimonk.com/templates/use-cases/free-shipping-bar-5fabce0f8a4b6100128e2627?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Increase average order value by offering free shipping over a pre-defined price. Works seamlessly with your Woocommerce store.
-
-**⭐ [Discount Coupon Reminders:](https://www.optimonk.com/templates/use-cases/discount-reminder-5fb534910e4fb2001328a153?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Increase coupon redemption rate and drive more sales with coupon reminder bars.
-
-**⭐ [Lead Magnet Popups:](https://www.optimonk.com/templates/use-cases/lead-magnet-popup-5fb50e27b2c72500131459a7?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Offer a compelling lead magnet like a free ebook to collect valuable leads and convert them into customers later.
-
-**⭐ [Product Recommender Popups:](https://www.optimonk.com/templates/all?goals=recommend_products&utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Personalize your returning visitor's experience with dynamic product recommendations and boost your Customer Lifetime Value (CLTV).
-
-**⭐ [Feedback Survey Popups:](https://www.optimonk.com/templates/all?goals=collect_feedback&utm_source=referral&utm_medium=applisting&utm_campaign=wordpress)** Improve your customer journey by collecting valuable feedback from your website visitors or generate referrals and social mentions.
-
-**NEED MORE HELP? EXPERIENCE OUR ULTRA-FAST, UNDER 2-MINUTE RESPONSE TIME WITH OUR RAPID ONBOARDING SUPPORT🚀**
-For further information and personalized assistance, don't hesitate to contact us via chat after signing up: <a href="https://optimonk.com/?utm_source=referral&utm_medium=applisting&utm_campaign=wordpress" target="_blank" title="Get access to OptiMonk Rapid Support">Get access to OptiMonk Rapid Support</a>
+The agent doesn't just shrink your desktop popup. It creates a separate mobile design for every campaign, so your popups look great on any screen without extra work on your side.
 
 == Frequently Asked Questions ==
 
+= How does the OptiMonk AI agent work? =
+
+Enter your domain and describe the popup you want in the chat. The agent maps your brand's colors, fonts, style and products, asks questions if needed, and builds a custom popup. Refine it in the chat, set the targeting, and launch it in one click.
+
+= Do I stay in control of what goes live? =
+
+Yes. The agent suggests campaigns, tests and improvements, and you decide which ones to apply and launch.
+
+= Can the agent create popups in other languages? =
+
+Yes. It writes the popup in whichever language you ask for.
+
 = Does this plugin slow down my site? =
 
-Absolutely not. OptiMonk is designed with high performance and scalability in mind. We optimized OptiMonk for website performance and page speed by loading it asynchronously.
+No. OptiMonk loads asynchronously and is optimized for page speed.
 
 = Can I customize the look and feel of the campaigns? =
 
-Yes, you have full control over the design and content of your campaigns. You can use our user-friendly WYSIWYG editor, and you also have control over HTML and CSS if necessary.
+Yes, you have full control. Ask the agent for changes in the chat.
 
 = Do I need coding skills to use OptiMonk? =
 
-No, it is super simple and easy for anyone to use. Our visual editor allows you to create stunning popups, embedded campaigns, or make content edits to your site without writing a single line of code. And if you get stuck, our support team will cover you for free.
+No. The agent handles the design, the copy and the setup. If you get stuck, our support team helps you for free.
 
-= Do you provide direct integrations to email and marketing automation tools? =
+= Can I use OptiMonk from Claude, ChatGPT or other AI assistants? =
 
-Yes, we offer direct integrations with several email marketing tools, including Mailchimp, Hubspot, Active Campaign, Attentive, Infusionsoft, Aweber, GetResponse, Constant Contact, and Campaign Monitor. When a new visitor subscribes, their contact information is automatically forwarded to any of these systems. Alternatively, you can download a CSV list of your newsletter subscribers.
+Yes. With the MCP integration, you can create campaigns and check your data from Claude, ChatGPT or another AI assistant. [See the setup guide](https://support.optimonk.com/en/articles/connect-your-ai-agent).
 
-= How can I integrate OptiMonk with an email marketing software? =
+= Which email and marketing tools does OptiMonk integrate with? =
 
-Once you created a campaign, you can set up the integrations at campaign settings.
+Klaviyo, Mailchimp, Hubspot, ActiveCampaign, Attentive, Infusionsoft, Aweber, GetResponse, Constant Contact, Campaign Monitor and more. New subscribers are sent to these tools automatically, or you can download them as a CSV file. You can set up integrations in each campaign's settings.
 
 == Screenshots ==
 
-1. Build high-converting popups without the busywork with an AI-native popup builder.
-2. Use the AI wizard to build on-brand popups instantly.
-3. Fine-tune your popups with our drag & drop editor or AI editor. You decide which editor to use.
-4. Email & SMS popups designed to boost sales & conversions.
-5. A/B test more than just copy or image changes by comparing various offers and campaigns. True revenue analytics reveal what truly drives sales.
+1. Create custom popups by chatting with AI. The agent handles the design, the copy and the setup.
+2. No two popups look the same. Every design is built from scratch for your brand, not from a template.
+3. Build your popups from Claude, or any AI assistant, with the OptiMonk MCP integration.
+4. The agent keeps working: it suggests new campaigns based on your store data, and you review and approve them.
 
 == Changelog ==
 
